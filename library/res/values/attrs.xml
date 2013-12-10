@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DynamicRelativeLayout">
+        <attr name="layout_dynamic_margin_left" format="float"/>
+        <attr name="layout_dynamic_margin_top" format="float"/>
+        <attr name="layout_dynamic_margin_right" format="float"/>
+        <attr name="layout_dynamic_margin_bottom" format="float"/>
+        <attr name="layout_dynamic_width" format="float"/>
+        <attr name="layout_dynamic_height" format="float"/>
+        <attr name="layout_dynamic_margin_base_left" format="reference"/>
+        <attr name="layout_dynamic_margin_base_top" format="reference"/>
+        <attr name="layout_dynamic_margin_base_right" format="reference"/>
+        <attr name="layout_dynamic_margin_base_bottom" format="reference"/>
+        <attr name="layout_dynamic_max_height" format="float"/>
+        <attr name="layout_dynamic_max_width" format="float"/>
+        <attr name="layout_dynamic_min_height" format="float"/>
+        <attr name="layout_dynamic_min_width" format="float"/>
+    </declare-styleable>
+</resources>

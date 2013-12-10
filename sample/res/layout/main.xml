@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:mlayout="http://schemas.android.com/apk/res-auto">
+    <com.littlemock.DynamicRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <!--Base View
+            Test Margin Top and LEFT-->
+        <Button android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:text="BASE VIEW"
+                android:background="#FF4D4D"
+                mlayout:layout_dynamic_margin_top=".3"
+                mlayout:layout_dynamic_margin_left=".3"
+                android:gravity="center"
+                />
+        <!--Base View
+            Test Dynamic Width and Height-->
+        <Button
+                android:id="@+id/tv2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                mlayout:layout_dynamic_width=".2"
+                mlayout:layout_dynamic_height=".2"
+                android:background="#FFFFFF"
+                android:text="SECOND View"/>
+
+        <Button
+                android:id="@+id/text"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                mlayout:layout_dynamic_margin_left="0.2"
+                mlayout:layout_dynamic_margin_bottom="0.1"
+                mlayout:layout_dynamic_margin_base_left="@id/tv2"
+                mlayout:layout_dynamic_margin_base_bottom="@id/button"
+                android:background="#FBCDEF"
+                android:text="Relative View"/>
+
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="#A9E97B"
+                android:text="Test Max Width and Height"
+                mlayout:layout_dynamic_max_height="0.2"
+                mlayout:layout_dynamic_max_width="0.2"
+                mlayout:layout_dynamic_margin_right="0.2"
+                mlayout:layout_dynamic_margin_bottom="0.1"
+                />
+
+    </com.littlemock.DynamicRelativeLayout>
+</merge>
