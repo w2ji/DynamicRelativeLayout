@@ -20,6 +20,7 @@
             <groupId>com.google.android</groupId>
             <artifactId>android</artifactId>
             <version>4.1.1.4</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -60,10 +61,6 @@
                 <artifactId>android-maven-plugin</artifactId>
                 <version>3.6.0</version>
                 <configuration>
-					<release>true</release>
-					<sign>
-						<debug>false</debug>
-                    </sign>
                     <sdk>
                         <platform>17</platform>
                     </sdk>
@@ -72,15 +69,6 @@
                         <verbose>true</verbose>
 					</zipalign>
                 </configuration>
-				<executions>
-                	<execution>
-                    	<id>alignApk</id>
-                        <phase>package</phase>
-                        <goals>
-                        	<goal>zipalign</goal>
-                        </goals>
-                    </execution>
-				</executions>
             </plugin>
         </plugins>
     </build>

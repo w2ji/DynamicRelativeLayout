@@ -1,4 +1,4 @@
-package com.littlemock;
+package com.littlemock.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;
